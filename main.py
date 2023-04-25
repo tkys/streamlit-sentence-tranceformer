@@ -4,7 +4,7 @@ import subprocess
 command = subprocess.run(['pip', 'list'] , capture_output=True, text=True)
 st.write(command)
 
-command = subprocess.run(['hostname'] , capture_output=True, text=True)
+command = subprocess.run(['hostnamectl'] , capture_output=True, text=True)
 st.write(command)
 
 
